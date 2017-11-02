@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="http://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <style>
+        .img {
+            height: 350px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1>Survey Questions</h1>
+            <hr />
+            <h2>About You</h2>
+            <h4>Name (Required)</h4>
+            <input class="form-control" id="name" type="text">
+            <h4>Link to Photo Image (Required)</h4>
+            <input class="form-control" id="photo" type="text">
+            <hr />
+            <h2>Question 1</h2>
+            <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                <div>
+                    <select class="form-control" id="q1">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 2</h2>
+            <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+                <div>
+                    <select class="form-control" id="q2">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 3</h2>
+            <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+                <div>
+                    <select class="form-control" id="q3">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 4</h2>
+            <h4>You rarely do something just out of sheer curiosity.</h4>
+                <div>
+                    <select class="form-control" id="q4">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+
+            <h2>Question 5</h2>
+            <h4>People can rarely upset you.</h4>
+                <div>
+                    <select class="form-control" id="q5">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 6</h2>
+            <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+                <div>
+                    <select class="form-control" id="q6">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 7</h2>
+            <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+                <div>
+                    <select class="form-control" id="q7">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 8</h2>
+            <h4>You rarely get carried away by fantasies and ideas.</h4>
+                <div>
+                    <select class="form-control" id="q8">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 9</h2>
+            <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+                <div>
+                    <select class="form-control" id="q9">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+            <h2>Question 10</h2>
+            <h4>You feel more energetic after spending time with a group of people.</h4>
+                <div>
+                    <select class="form-control" id="q10">
+                    <option value="" selected disabled>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                </div>
+                <br>
+            <a class="btn btn-info btn-lg btn-block" id="findFriend" data-toggle="modal" data-target="#myModal">Find Your New Friend!</a>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Meet Your New Friend!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="friendName"></div>
+                        <div id="friendImg"></div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-info btn-block" data-dismiss="modal" id="closeMe">Close</button>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            <hr />          
+            <p><a href="api/friends">API Friends List</a> | <a href="https://github.com/ajandorek/friend-finder">GitHub Repo</a></p>
+        </div>
+    </body>
+    <script type="text/javascript">
+        //When our submit button is clicked...  
+        $("#findFriend").on("click", function(event){
+            //We get the friends api
+            $.get("/api/friends").done(function(data){
+                //setting a variable of our api
+                var friends = data;
+                event.preventDefault();
+                //creating an empty array for our match rank
+                var matchRank = [];
+                //looping through our friend array
+                for (var i = 0; i < data.length; i++){
+                    //setting a temporary empty arry for scores
+                    var scores = [];
+                    //subtracting our input values from that of each friend in the array and inputing them into our temporary array
+                    var  q1 = ($("#q1").val() - friends[i].scores[0]);
+                    scores.push(Math.abs(q1));
+                    var  q2 = ($("#q2").val() - friends[i].scores[1]);
+                    scores.push(Math.abs(q2));
+                    var  q3 = ($("#q3").val() - friends[i].scores[2]);
+                    scores.push(Math.abs(q3));
+                    var  q4 = ($("#q4").val() - friends[i].scores[3]);
+                    scores.push(Math.abs(q4));
+                    var  q5 = ($("#q5").val() - friends[i].scores[4]);
+                    scores.push(Math.abs(q5));
+                    var  q6 = ($("#q6").val() - friends[i].scores[5]);
+                    scores.push(Math.abs(q6));
+                    var  q7 = ($("#q7").val() - friends[i].scores[6]);
+                    scores.push(Math.abs(q7));
+                    var  q8 = ($("#q8").val() - friends[i].scores[7]);
+                    scores.push(Math.abs(q8));
+                    var  q9 = ($("#q9").val() - friends[i].scores[8]);
+                    scores.push(Math.abs(q9));
+                    var  q10 = ($("#q10").val() - friends[i].scores[9]);
+                    scores.push(Math.abs(q10));
+                    console.log(scores);
+                    //adding all of our scores together from the array
+                    var sum = scores.reduce((a, b) => a + b, 0);
+                    //pushing that number into our match array
+                    matchRank.push(sum);
+                }
+                //taking the lowest score from out match rank array
+                var lowScore = Math.min.apply(Math, matchRank);
+                //finding the index of the lowest score
+                var bestie = matchRank.indexOf(lowScore);
+                console.log(`congrats your new friend is ${friends[bestie].name} :)`);
+                //logging the best matched friend to the screen
+                $("#friendName").html(`<h1>Name: ${friends[bestie].name}</h1>`);
+                $("#friendImg").html(`<img class="img" src="${friends[bestie].photo}" alt="a picture of ${friends[bestie].name}" />`);
+                //reloading the page when the modal is closed
+                $("#closeMe").on("click", function(){
+                    location.reload();
+                });
+            });
+                //adding the user input to the friend array
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+                };
+                console.log(newFriend);
+                //posting our new friend to the api
+                $.post("/api/friends", newFriend, function(data){
+                    console.log("New Friend Added :)");
+                });
+            });
+        </script>
+</html>
